@@ -130,7 +130,7 @@
   					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-medium.jpg"
   					alt="images représentant un Concert"
   					width="450"
-  					height="450"
+  					height="600"
   					srcset="
    						./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-small.jpg 600w,
     					./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-medium.jpg 1200w,
@@ -144,7 +144,7 @@
 					src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-medium.jpg"
 					alt="image représentant une Entreprise"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 						./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-small.jpg 600w,
 						./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-medium.jpg 1200w,
@@ -158,7 +158,7 @@
 					src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-medium.jpg"
 					alt="image représentant des Entreprises"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 					  ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-small.jpg 600w,
 					  ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-medium.jpg 1200w,
@@ -172,7 +172,7 @@
 					src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-medium.jpg"
 					alt="images représentant des Mariages"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 					  ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-small.jpg 600w,
 					  ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-medium.jpg 1200w,
@@ -186,7 +186,7 @@
 					src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-medium.jpg"
 					alt="image représentant un Portrait"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 					  ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-small.jpg 600w,
 					  ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-medium.jpg 1200w,
@@ -200,7 +200,7 @@
 					src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-medium.jpg"
 					alt="images représentant des Mariages"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 					  ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-small.jpg 600w,
 					  ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-medium.jpg 1200w,
@@ -214,7 +214,7 @@
 					src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-medium.jpg"
 					alt="image représentant un Portrait"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 					  ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-small.jpg 600w,
 					  ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-medium.jpg 1200w,
@@ -228,7 +228,7 @@
 					src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-medium.jpg"
 					alt="image représentant un Concert"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 					  ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-small.jpg 600w,
 					  ./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-medium.jpg 1200w,
@@ -242,7 +242,7 @@
 					src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-medium.jpg"
 					alt="images représentant des Entreprises"
 					width="450"
-					height="450"
+					height="600"
 					srcset="
 					  ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-small.jpg 600w,
 					  ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-medium.jpg 1200w,
@@ -330,20 +330,64 @@
 					<source media="(min-width: 601px) and (max-width: 1200px)" srcset="./assets/images/camera.png 430w">
 					<source media="(max-width: 600px)" srcset="./assets/images/camera.png 300w">
 					<img src="./assets/images/camera.png" alt="image représentant un objectif d'appareil photo" loading="lazy" width="430" height="429">
-				</picture>
-
-				
-				
-				
-				  
-				  
-				  
+				</picture>	  
             </article>
         </div>
     </div>   
 </footer>
 
-<!-- Service Worker  -->
+
+ 
+<script>
+	// Exemple de données pour chaque image
+	const images = [
+	  {
+		tag: "Concert",
+		path: "./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash", 
+	  },
+	  {
+    	tag: "Concert",
+    	path: "./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash",
+  	  },
+	  {
+		tag: "Entreprises",
+		path: "./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash",
+	  },
+
+	  // Ajout possible d'autres images selon le même modèle
+	];
+  
+	// Fonction pour générer les balises <img> avec les dimensions appropriées
+	function generateImageTags() {
+	  const container = document.querySelector('.gallery'); 
+	  
+	  images.forEach((image) => {
+		const img = document.createElement('img');
+		img.classList.add('gallery-item', 'img-fluid');
+		img.setAttribute('data-gallery-tag', image.tag);
+		img.setAttribute('alt', `Image représentant ${image.tag}`);
+		img.setAttribute('width', '450');
+		img.setAttribute('height', '600');
+		img.src = `${image.path}-medium.jpg`;
+		img.srcset = `
+		  ${image.path}-small.jpg 600w,
+		  ${image.path}-medium.jpg 1200w,
+		  ${image.path}-large.jpg 2000w,
+		  ${image.path}-extralarge.jpg 3000w
+		`;
+		img.sizes = '(max-width: 600px) 600px, (max-width: 1200px) 1200px, 2000px, 3000px';
+  
+		container.appendChild(img);
+	  });
+	}
+  
+	// Appeler la fonction pour générer les balises <img> lorsque la page est chargée
+	document.addEventListener('DOMContentLoaded', generateImageTags);
+  </script>
+
+
+
+  <!-- Service Worker  -->
 <script>
 	if ('serviceWorker' in navigator) {
 	  navigator.serviceWorker.register('/service-worker.js')
@@ -355,6 +399,8 @@
 		});
 	}
   </script>
+  </body>
+  </html>
   
 </body>
 
