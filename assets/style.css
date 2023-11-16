@@ -37,6 +37,7 @@ body {
     max-width: 1920px;
     margin: auto;
     font-family: Inter;
+    color: #000000;
 }
 .top-header {
     position: sticky;
