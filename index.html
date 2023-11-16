@@ -217,7 +217,6 @@
 </footer>
 
 
- <!--portfolio généré grâce à ce script-->
 <script>
 	
 	const images = [
@@ -258,33 +257,46 @@
 		path: "assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash",
 	  },
 	];
-       // Fonction pour générer les balises <img> avec les dimensions appropriées
-	   function generateImageTags() {
-          const container = document.querySelector('.gallery');
-          container.innerHTML = '';
+	    
+	function generateImageTags() {
+        const container = document.querySelector('.gallery');
+        container.innerHTML = '';
 
-          images.forEach((image) => {
+        images.forEach((image) => {
             const img = document.createElement('img');
             img.classList.add('gallery-item', 'img-fluid');
             img.setAttribute('data-gallery-tag', image.tag);
             img.setAttribute('alt', `Image représentant ${image.tag}`);
-            img.setAttribute('width', '450');
-            img.setAttribute('height', '600');
-            img.src = `${image.path}-medium.jpg`;
+            
+            // Utilisez la nouvelle image 636x636 comme source par défaut
+            img.src = `${image.path}-636.jpg`; 
+            
+            // Incluez la nouvelle taille d'image dans le srcset
             img.srcset = `
+              ${image.path}-extrasmall.jpg 300w,
               ${image.path}-small.jpg 600w,
+              ${image.path}-636.jpg 636w, // Nouvelle taille ajoutée
               ${image.path}-medium.jpg 1200w,
               ${image.path}-large.jpg 2000w,
               ${image.path}-extralarge.jpg 3000w
             `;
-            img.sizes = '(max-width: 600px) 600px, (max-width: 1200px) 1200px, 2000px, 3000px';
+
+            // Assurez-vous que l'attribut sizes correspond aux points d'arrêt réels de votre design
+            img.sizes = `
+  				(max-width: 300px) 300px,
+  				(max-width: 600px) 600px,
+  				(max-width: 636px) 636px,
+  				(max-width: 900px) 900px,
+  				(max-width: 1200px) 1200px,
+  				100vw
+			`;
 
             container.appendChild(img);
-          });
-        }
+        });
+    }
 
-        document.addEventListener('DOMContentLoaded', generateImageTags);
-    </script>
+    document.addEventListener('DOMContentLoaded', generateImageTags);
+</script>
 
     <!-- Service Worker -->
 <script>
