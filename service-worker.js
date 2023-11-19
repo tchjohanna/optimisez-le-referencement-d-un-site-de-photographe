@@ -7,10 +7,10 @@ self.addEventListener('install', (event) => {
         // Ajoutez les fichiers que vous souhaitez mettre en cache ici
         '/',
         '/index.html',
-        '/style.css',
-        '/scripts.js',
-        '/maugallery.js'
-        // ... autres fichiers
+        '/assets/style.css',
+        '/assets/scripts.js',
+        '/assets/maugallery.js',
+        '/assets/image-gallery.js'
       ]);
     })
   );
