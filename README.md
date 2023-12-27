@@ -1,127 +1,42 @@
-# Projet : Optimisation du Référencement d'un Site de Photographe
 
-## Guide d'Étapes Clés
+# Guide d'étapes clés pour le projet “Optimisez le référencement d'un site de photographe”
 
-### Comment utiliser ce document ?
-Ce guide est conçu pour vous aider à naviguer à travers les différentes étapes du projet. Il inclut :
+## Comment utiliser ce document ?
+Ce document offre un découpage en étapes pour optimiser le référencement du site d'un photographe, comprenant des recommandations, des points de vigilance, et une estimation de la progression du projet.
 
-- Des recommandations pour réussir chaque étape.
-- Les problèmes récurrents et points de vigilance à garder en tête.
-- Une estimation de votre avancement sur l’ensemble du projet.
+**Note :** Ce découpage est une suggestion. Vous pouvez adapter l’ordre de réalisation des étapes selon vos besoins.
 
-### Recommandations Générales
-Le SEO est une tâche en constante évolution. Ce guide vous aidera à vous organiser et à éviter de vous disperser. Notez que l'ordre des étapes 3 à 6 peut être adapté selon vos besoins.
+## Recommandations générales
+- Le SEO est en constante évolution. Suivez ce guide pour organiser vos tâches de manière efficace.
+- Adaptez l’ordre des étapes 3 à 6 selon votre jugement.
 
----
+## Étape 1 : Prenez en main le code source (Progression : 5%)
+### Prérequis
+- Récupération du code source du projet.
+- Connaissance de l’énoncé.
 
-## Étapes du Projet
+### Objectifs
+- Première analyse du code avec Lighthouse.
 
-### Étape 1 : Prise en Main du Code Source
-**Progression : 5%**
+### Recommandations
+- Analysez le code pour identifier les premiers axes d’amélioration.
+- Utilisez Lighthouse pour un audit détaillé, ainsi que GTMetrix si nécessaire.
 
-**Objectifs :**
-- Récupérer le code source du projet.
-- Prendre connaissance de l'énoncé.
-- Réaliser une première analyse du code avec Lighthouse.
+### Points de vigilance
+- L’audit Lighthouse doit être effectué avec l’option “mobile”.
 
-**Recommandations :**
-- Assurez-vous de bien comprendre le code avant de commencer les modifications.
-- Réalisez un audit détaillé pour identifier les axes d'amélioration.
+### Ressources
+- Article sur Google Lighthouse.
+- GTMetrix pour prioriser les tâches d'optimisation.
 
-**Ressources :**
-- [Article Ionos sur Google Lighthouse]https://www.ionos.fr/digitalguide/web-marketing/search-engine-marketing/google-lighthouse/
-- [GTMetrix](URL)https://www.ionos.fr/digitalguide/web-marketing/search-engine-marketing/google-lighthouse/
+## Étape 2 : Listez les optimisations qui peuvent être réalisées (Progression : 15%)
+...
 
----
+(Continuez en détaillant chaque étape de la même manière que les étapes 1 et 2, en fournissant des informations sur les prérequis, objectifs, recommandations, points de vigilance et ressources.)
 
-### Étape 2 : Liste des Optimisations à Réaliser
-**Progression : 15%**
+## Étape 7 : Génération des rapports finaux et relecture des documents (Progression : 100%)
+...
 
-**Objectifs :**
-- Réaliser un audit avec Lighthouse et/ou GTMetrix.
-- Établir une liste des modifications à apporter pour améliorer le référencement.
+## Projet terminé !
+Félicitations pour avoir terminé le projet. Assurez-vous que votre rapport d'optimisation est complet et clair, et que tous les aspects du référencement ont été traités efficacement.
 
-**Recommandations :**
-- Notez les améliorations principales identifiées par l'audit.
-- N'oubliez pas les principes de base du SEO et de l'accessibilité.
-
-**Ressources :**
-- [Relation entre HTML sémantique et SEO](URL)https://www.pixelcrea.com/blog/semantique-seo-page/
-
----
-
-### Étape 3 : Optimisation des Performances du Site
-**Progression : 30%**
-
-**Objectifs :**
-- Améliorer les performances du site (score Lighthouse ≥ 90%).
-
-**Recommandations :**
-- Concentrez-vous sur les améliorations majeures indiquées par les audits.
-- Priorisez les modifications ayant le plus grand impact.
-
-**Ressources :**
-- [7 points pour optimiser les images pour le SEO](URL)https://fr.oncrawl.com/referencement/7-astuces-pour-optimiser-vos-images-facon-seo/
-
----
-
-### Étape 4 : Optimisation du SEO Technique
-**Progression : 50%**
-
-**Objectifs :**
-- Améliorer le score SEO de Lighthouse (≥ 90%).
-
-**Recommandations :**
-- Choisissez les optimisations techniques les plus pertinentes pour le projet.
-
-**Ressources :**
-- [Minifier les fichiers HTML/CSS/JS](URL)https://blog.lws-hosting.com/comment-optimiser-son-site-web-avec-la-minification-css-js-et-html/
-- [Optimisation on-page du référencement](URL)https://blog.hubspot.fr/marketing/on-page-seo-comment-optimiser-site-web
-
----
-
-### Étape 5 : Référencement Local et Réseaux Sociaux
-**Progression : 70%**
-
-**Objectifs :**
-- Intégrer le référencement local avec Schema.org.
-- Ajouter des metas pour les réseaux sociaux.
-
-**Recommandations :**
-- Utilisez les microdonnées de Schema.org pour le référencement local.
-
-**Ressources :**
-- [Améliorer le référencement local : 10 conseils](URL)https://www.codeur.com/blog/conseils-referencement-local/
-- [Open Graph et Twitter Cards](URL)https://maxime-garnier.fr/blog/referencement-debuter-en-referencement/9-open-graph-twitter-cards-quest-cest-comment-utiliser
-
----
-
-### Étape 6 : Correction de l’Accessibilité
-**Progression : 90%**
-
-**Objectifs :**
-- Améliorer l'accessibilité du site (score Lighthouse ≥ 90%).
-
-**Recommandations :**
-- Utilisez des outils comme WAVE pour vérifier l'accessibilité.
-
-**Ressources :**
-- [MDN checklist pour l’accessibilité mobile](URL)https://developer.mozilla.org/fr/docs/Web/Accessibility/Mobile_accessibility_checklist
-
----
-
-### Étape 7 : Génération des Rapports Finaux et Relecture des Documents
-**Progression : 100%**
-
-**Objectifs :**
-- Finaliser le rapport d'optimisation.
-- Obtenir un score Lighthouse vert sur les trois axes.
-
-**Recommandations :**
-- Listez clairement toutes les modifications réalisées.
-- Assurez-vous que le rapport est compréhensible pour le client.
-
----
-
-## Conclusion
-Projet terminé ! Vous avez maintenant optimisé le référencement du site d'un photographe, améliorant ses performances, son accessibilité,
